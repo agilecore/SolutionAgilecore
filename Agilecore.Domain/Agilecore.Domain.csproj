@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4F579A5-DE0F-4C71-851F-4F0225A6C5E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agilecore.Domain</RootNamespace>
+    <AssemblyName>Agilecore.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Atuacao\Atuacao.cs" />
+    <Compile Include="Models\Atuacao\AtuacaoSpecialized.cs" />
+    <Compile Include="Models\ContatoMensagem\ContatoMensagem.cs" />
+    <Compile Include="Models\ContatoMensagem\ContatoMensagemSpecialized.cs" />
+    <Compile Include="Models\Contato\Contato.cs" />
+    <Compile Include="Models\Contato\ContatoSpecialized.cs" />
+    <Compile Include="Models\Institucional\Institucional.cs" />
+    <Compile Include="Models\Institucional\InstitucionalSpecialized.cs" />
+    <Compile Include="Models\LogAcesso\LogAcesso.cs" />
+    <Compile Include="Models\LogAcesso\LogAcessoSpecialized.cs" />
+    <Compile Include="Models\PerfilUsuario\PerfilUsuario.cs" />
+    <Compile Include="Models\PerfilUsuario\PerfilUsuarioSpecialized.cs" />
+    <Compile Include="Models\Perfil\Perfil.cs" />
+    <Compile Include="Models\Perfil\PerfilSpecialized.cs" />
+    <Compile Include="Models\Usuario\Usuario.cs" />
+    <Compile Include="Models\Usuario\UsuarioSpecialized.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agilecore.Common\Agilecore.Common.csproj">
+      <Project>{f11f19b8-bad4-4bd6-87c7-a2de01e5b4d6}</Project>
+      <Name>Agilecore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agilecore.Data\Agilecore.Data.csproj">
+      <Project>{a2314c91-81f3-4389-8622-1a21b4ab4f32}</Project>
+      <Name>Agilecore.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

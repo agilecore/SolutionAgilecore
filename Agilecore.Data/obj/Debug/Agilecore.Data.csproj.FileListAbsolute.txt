@@ -1,0 +1,12 @@
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\Agilecore.Data.dll.config
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\Agilecore.Data.dll
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\Agilecore.Data.pdb
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\Agilecore.Common.dll
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\EntityFramework.dll
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\Agilecore.Common.pdb
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\EntityFramework.xml
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\obj\Debug\Agilecore.Data.csprojResolveAssemblyReference.cache
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\obj\Debug\Agilecore.Data.dll
+C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Data\obj\Debug\Agilecore.Data.pdb
