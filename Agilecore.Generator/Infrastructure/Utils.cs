@@ -80,7 +80,7 @@ namespace Gerador.Infrastructure
 			if ((ColumnDataType == "float"))
 				DataType = "System.Single";
 
-			if ((ColumnDataType == "char") || (ColumnDataType == "varchar") || (ColumnDataType == "varchar2") || (ColumnDataType == "nvarchar2") || (ColumnDataType == "text") || (ColumnDataType == "longtext") || (ColumnDataType == "clob") || (ColumnDataType == "long") || (ColumnDataType == "nchar") || (ColumnDataType == "nclob") || (ColumnDataType == "rowid"))
+			if ((ColumnDataType == "char") || (ColumnDataType == "varchar") || (ColumnDataType == "nvarchar") || (ColumnDataType == "varchar2") || (ColumnDataType == "nvarchar2") || (ColumnDataType == "text") || (ColumnDataType == "longtext") || (ColumnDataType == "clob") || (ColumnDataType == "long") || (ColumnDataType == "nchar") || (ColumnDataType == "nclob") || (ColumnDataType == "rowid"))
 				DataType = "System.String";
 
 			if ((ColumnDataType == "time"))
