@@ -149,7 +149,7 @@ namespace Gerador.Infrastructure
             TextClass.AppendLine("    }");
             TextClass.AppendLine("}");
 
-            return CreateFileMadatory(String.Concat(DataModel.ClassName, SufixoModels), @"Models\" + DataModel.ClassName);
+            return CreateFileMadatory(String.Concat(DataModel.ClassName, SufixoModels), FilePathCommon + @"\Models");
         }
 
         public String BuildModelsExtension(KeyValuePair<String, ModelConfig> TableSetting)
@@ -403,11 +403,11 @@ namespace Gerador.Infrastructure
             TextClass.AppendLine("    {                                                                                                                                 ");
             TextClass.AppendLine("        private DbSet<TEntity> _dbSet;                                                                                                ");
             TextClass.AppendLine("                                                                                                                                      ");
-            TextClass.AppendLine("        private " + ProjectName + " _dbContext;                                                                                                 ");
+            TextClass.AppendLine("        private " + ProjectName + "Context _dbContext;                                                                                                 ");
             TextClass.AppendLine("                                                                                                                                      ");
             TextClass.AppendLine("        internal Boolean _preConfig = false;                                                                                          ");
             TextClass.AppendLine("                                                                                                                                      ");
-            TextClass.AppendLine("        public Repository(" + ProjectName + " dbContext)                                                                                        ");
+            TextClass.AppendLine("        public Repository(" + ProjectName + "Context dbContext)                                                                                        ");
             TextClass.AppendLine("        {                                                                                                                             ");
             TextClass.AppendLine("            InitializePreConfiguration(dbContext);                                                                                    ");
             TextClass.AppendLine("        }                                                                                                                             ");
@@ -461,7 +461,7 @@ namespace Gerador.Infrastructure
             TextClass.AppendLine("        /// Método inicial principal que é iniciado mediante as configuracoes, isso deixa o entity framework mais rapido ou mais lento");
             TextClass.AppendLine("        /// Se \"_preConfig\" false nao entra aqui e continua com as configuracoes padrao do entity framework.                        ");
             TextClass.AppendLine("        /// </summary>                                                                                                                ");
-            TextClass.AppendLine("        internal void InitializePreConfiguration(" + ProjectName + " dbContext)                                                       ");
+            TextClass.AppendLine("        internal void InitializePreConfiguration(" + ProjectName + "Context dbContext)                                                       ");
             TextClass.AppendLine("        {                                                                                                                             ");
             TextClass.AppendLine("            this._dbSet = dbContext.Set<TEntity>();                                                                                   ");
             TextClass.AppendLine("            this._dbContext = dbContext;                                                                                              ");
@@ -487,7 +487,7 @@ namespace Gerador.Infrastructure
             TextClass.AppendLine("    }                                                                                                                                 ");
             TextClass.AppendLine("}                                                                                                                                     ");
 
-            return CreateFile("Repository", "Repository");
+            return CreateFileMadatory("Repository", FilePath + @"\Repository");
         }
 
         public String BuildIRespository()
@@ -515,7 +515,8 @@ namespace Gerador.Infrastructure
             TextClass.AppendLine("    }                                                                               ");
             TextClass.AppendLine("}                                                                                   ");
 
-            return CreateFileMadatory("IRepository", "Interface");
+            return CreateFileMadatory("IRepository", FilePath + @"\Interface");
+
         }
 
         private String CreateFile(String ClassName, String Folder)
@@ -559,16 +560,21 @@ namespace Gerador.Infrastructure
 
         private String CreateFileMadatory(String ClassName, String Folder)
         {
-            var FileName = String.Format(@"{0}.{1}", ClassName, "cs");
-            var Diretory = String.Format(@"{0}\{1}", FilePath, Folder);
-            var FullFile = String.Format(@"{0}\{1}", Diretory, FileName);
-            var DirInfo = new DirectoryInfo(Diretory);
+            var FullFile = String.Format(@"{0}\{1}.{2}", Folder, ClassName, "cs");
 
-            if (!DirInfo.Exists) { DirInfo.Create();}
+            if (File.Exists(FullFile))
+            {
+                File.Delete(FullFile);
+            }
+            else
+            {
 
-            using (TextWriter Writer = File.CreateText(FullFile)) { Writer.WriteLine(TextClass.ToString()); }
+                Directory.CreateDirectory(Folder);
+                using (TextWriter Writer = File.CreateText(FullFile)) { Writer.WriteLine(TextClass.ToString()); }
 
-            return FileName;
+            }
+
+            return String.Format("{0}.{1}", ClassName, "cs"); ;
         }
 
     }
