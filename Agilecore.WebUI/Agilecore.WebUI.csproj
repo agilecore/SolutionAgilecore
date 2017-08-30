@@ -89,11 +89,75 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\fancybox_loading.gif" />
+    <Content Include="Content\css\fancybox_overlay.png" />
+    <Content Include="Content\css\fancybox_sprite.png" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\hover.css" />
+    <Content Include="Content\css\icomoon.css" />
+    <Content Include="Content\css\jquery.fancybox.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\media-queries.css" />
+    <Content Include="Content\css\normalize.min.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\fonts\Caecilia\Italic.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\icomoon.svg" />
+    <Content Include="Content\fonts\museo-slab-500-italic.svg" />
+    <Content Include="Content\fonts\museo-slab-500.svg" />
+    <Content Include="Content\fonts\Panton\Bold.svg" />
+    <Content Include="Content\fonts\Panton\Extralight.svg" />
+    <Content Include="Content\fonts\Panton\Light.svg" />
+    <Content Include="Content\fonts\Panton\Regular.svg" />
+    <Content Include="Content\fonts\ProximaNova\Black.svg" />
+    <Content Include="Content\fonts\ProximaNova\Bold.svg" />
+    <Content Include="Content\fonts\ProximaNova\Extrabold.svg" />
+    <Content Include="Content\fonts\ProximaNova\Light.svg" />
+    <Content Include="Content\fonts\ProximaNova\Regular.svg" />
+    <Content Include="Content\fonts\ProximaNova\Semibold.svg" />
+    <Content Include="Content\fonts\ProximaNova\Thin.svg" />
+    <Content Include="Content\img\01.jpg" />
+    <Content Include="Content\img\02.jpg" />
+    <Content Include="Content\img\03.jpg" />
+    <Content Include="Content\img\envelop.png" />
+    <Content Include="Content\img\footer-logo.png" />
+    <Content Include="Content\img\location-icon.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\parallax\city.jpg" />
+    <Content Include="Content\img\preloader.gif" />
+    <Content Include="Content\img\team\member-1.png" />
+    <Content Include="Content\img\team\member-2.png" />
+    <Content Include="Content\img\team\member-3.png" />
+    <Content Include="Content\img\works\item-1.jpg" />
+    <Content Include="Content\img\works\item-2.jpg" />
+    <Content Include="Content\img\works\item-3.jpg" />
+    <Content Include="Content\img\works\item-4.jpg" />
+    <Content Include="Content\img\works\item-5.jpg" />
+    <Content Include="Content\img\works\item-6.jpg" />
+    <Content Include="Content\img\works\item-7.jpg" />
+    <Content Include="Content\img\works\item-8.jpg" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\jquery-1.11.1.min.js" />
+    <Content Include="Content\js\jquery-countTo.js" />
+    <Content Include="Content\js\jquery.appear.js" />
+    <Content Include="Content\js\jquery.easing.min.js" />
+    <Content Include="Content\js\jquery.fancybox.pack.js" />
+    <Content Include="Content\js\jquery.mixitup.min.js" />
+    <Content Include="Content\js\jquery.parallax-1.1.3.js" />
+    <Content Include="Content\js\jquery.singlePageNav.min.js" />
+    <Content Include="Content\js\modernizr-2.6.2.min.js" />
+    <Content Include="Content\js\wow.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Tecnologia\TecnologiaController.cs" />
+    <Compile Include="Controllers\Clientes\ClientesController.cs" />
+    <Compile Include="Controllers\Servicos\ServicosController.cs" />
     <Compile Include="Controllers\Home\HomeController.cs" />
     <Compile Include="Controllers\Atuacao\AtuacaoController.cs" />
     <Compile Include="Controllers\Base.cs" />
@@ -112,6 +176,90 @@
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Contato\Index.cshtml" />
+    <Content Include="Views\Atuacao\Index.cshtml" />
+    <Content Include="Views\Institucional\Index.cshtml" />
+    <Content Include="Content\fonts\Caecilia\Italic.eot" />
+    <Content Include="Content\fonts\Caecilia\Italic.ttf" />
+    <Content Include="Content\fonts\Caecilia\Italic.woff" />
+    <Content Include="Content\fonts\Caecilia\Italic.woff2" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\fonts\museo-slab-500-italic.eot" />
+    <Content Include="Content\fonts\museo-slab-500-italic.woff" />
+    <Content Include="Content\fonts\museo-slab-500.eot" />
+    <Content Include="Content\fonts\museo-slab-500.woff" />
+    <Content Include="Content\fonts\newjune-bold-webfont.eot" />
+    <Content Include="Content\fonts\newjune-bold-webfont.ttf" />
+    <Content Include="Content\fonts\newjune-bold-webfont.woff" />
+    <Content Include="Content\fonts\newjune-book-webfont.eot" />
+    <Content Include="Content\fonts\newjune-book-webfont.ttf" />
+    <Content Include="Content\fonts\newjune-book-webfont.woff" />
+    <Content Include="Content\fonts\newjune-regular-italic-webfont.eot" />
+    <Content Include="Content\fonts\newjune-regular-italic-webfont.ttf" />
+    <Content Include="Content\fonts\newjune-regular-italic-webfont.woff" />
+    <Content Include="Content\fonts\newjune-semibold-webfont.eot" />
+    <Content Include="Content\fonts\newjune-semibold-webfont.ttf" />
+    <Content Include="Content\fonts\newjune-semibold-webfont.woff" />
+    <Content Include="Content\fonts\newjunemedium.eot" />
+    <Content Include="Content\fonts\newjunemedium.ttf" />
+    <Content Include="Content\fonts\newjunemedium.woff" />
+    <Content Include="Content\fonts\NewJuneRegular_gdi.eot" />
+    <Content Include="Content\fonts\NewJuneRegular_gdi.ttf" />
+    <Content Include="Content\fonts\NewJuneRegular_gdi.woff" />
+    <Content Include="Content\fonts\Panton\Bold.eot" />
+    <Content Include="Content\fonts\Panton\Bold.ttf" />
+    <Content Include="Content\fonts\Panton\Bold.woff" />
+    <Content Include="Content\fonts\Panton\Bold.woff2" />
+    <Content Include="Content\fonts\Panton\Extralight.eot" />
+    <Content Include="Content\fonts\Panton\Extralight.ttf" />
+    <Content Include="Content\fonts\Panton\Extralight.woff" />
+    <Content Include="Content\fonts\Panton\Extralight.woff2" />
+    <Content Include="Content\fonts\Panton\Light.eot" />
+    <Content Include="Content\fonts\Panton\Light.ttf" />
+    <Content Include="Content\fonts\Panton\Light.woff" />
+    <Content Include="Content\fonts\Panton\Light.woff2" />
+    <Content Include="Content\fonts\Panton\Regular.eot" />
+    <Content Include="Content\fonts\Panton\Regular.ttf" />
+    <Content Include="Content\fonts\Panton\Regular.woff" />
+    <Content Include="Content\fonts\Panton\Regular.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Black.eot" />
+    <Content Include="Content\fonts\ProximaNova\Black.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Black.woff" />
+    <Content Include="Content\fonts\ProximaNova\Black.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Bold.eot" />
+    <Content Include="Content\fonts\ProximaNova\Bold.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Bold.woff" />
+    <Content Include="Content\fonts\ProximaNova\Bold.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Extrabold.eot" />
+    <Content Include="Content\fonts\ProximaNova\Extrabold.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Extrabold.woff" />
+    <Content Include="Content\fonts\ProximaNova\Extrabold.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Light.eot" />
+    <Content Include="Content\fonts\ProximaNova\Light.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Light.woff" />
+    <Content Include="Content\fonts\ProximaNova\Light.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Regular.eot" />
+    <Content Include="Content\fonts\ProximaNova\Regular.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Regular.woff" />
+    <Content Include="Content\fonts\ProximaNova\Regular.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Semibold.eot" />
+    <Content Include="Content\fonts\ProximaNova\Semibold.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Semibold.woff" />
+    <Content Include="Content\fonts\ProximaNova\Semibold.woff2" />
+    <Content Include="Content\fonts\ProximaNova\Thin.eot" />
+    <Content Include="Content\fonts\ProximaNova\Thin.ttf" />
+    <Content Include="Content\fonts\ProximaNova\Thin.woff" />
+    <Content Include="Content\fonts\ProximaNova\Thin.woff2" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Servicos\Index.cshtml" />
+    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\Tecnologia\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,7 +292,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51930</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51930/</IISUrl>
+          <IISUrl>http://localhost:51999/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

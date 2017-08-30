@@ -15,8 +15,13 @@ namespace Agilecore.WebUI.Controllers
         public ContatoController()                                        
         {                                                                           
             _Contato = new Contato();                           
-        }                                                                           
-                                                                                    
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult List()                                                  
         {                                                                           
             var collectionContato = _Contato.GetAll().ToList(); 

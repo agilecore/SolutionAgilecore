@@ -15,8 +15,13 @@ namespace Agilecore.WebUI.Controllers
         public AtuacaoController()                                        
         {                                                                           
             _Atuacao = new Atuacao();                           
-        }                                                                           
-                                                                                    
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult List()                                                  
         {                                                                           
             var collectionAtuacao = _Atuacao.GetAll().ToList(); 

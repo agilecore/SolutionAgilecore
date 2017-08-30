@@ -15,8 +15,13 @@ namespace Agilecore.WebUI.Controllers
         public InstitucionalController()                                        
         {                                                                           
             _Institucional = new Institucional();                           
-        }                                                                           
-                                                                                    
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult List()                                                  
         {                                                                           
             var collectionInstitucional = _Institucional.GetAll().ToList(); 
