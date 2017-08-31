@@ -335,7 +335,7 @@ body > section,
 
 
 /*=========================================
-	Header
+    Header
 ==========================================*/
 
 #navigation
@@ -382,7 +382,7 @@ body > section,
 
 
 /*=========================================
-	Slider
+    Slider
 ==========================================*/
 
 #slider
@@ -490,7 +490,7 @@ body > section,
     }
 
 /*=========================================
-	Background
+    Background
 ==========================================*/
 .back-full
 {
@@ -604,7 +604,60 @@ html, body
 }
 
 /*=========================================
-	Features
+    services
+==========================================*/
+.title-service {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Panton Regular';
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 28pt;
+}
+
+.service-paragraph
+{
+    font-size: 11pt;
+    color: #807e7e;
+    font-family: 'Panton Regular';
+    line-height: 25px;
+}
+
+
+/*=========================================
+    tecnologia
+==========================================*/
+.title-tecnologia  {
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Panton Regular';
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size:28pt;
+}
+
+.subtitle-tecnologia  {
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Panton Regular';
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.paragraph-tecnologia  {
+    font-size: 11pt;
+    color: #807e7e;
+    font-family: 'Panton Regular';
+    line-height: 25px;
+}
+
+
+/*=========================================
+    Features
 ==========================================*/
 .container-features
 {
@@ -739,7 +792,7 @@ border-bottom-right-radius: 20px;
 
 
 /*=========================================
-	Our Works
+    Our Works
 ==========================================*/
 
 .work-filter
@@ -856,7 +909,7 @@ border-bottom-right-radius: 20px;
 
 
 /*=========================================
-	Our Team Member
+    Our Team Member
 ==========================================*/
 .box {
     position: relative;
@@ -970,7 +1023,7 @@ border-bottom-right-radius: 20px;
 
 
 /*=========================================
-	Some fun facts
+    Some fun facts
 ==========================================*/
 
 #facts
@@ -1036,7 +1089,7 @@ border-bottom-right-radius: 20px;
 
 
 /*=========================================
-	Contact Us
+    Contact Us
 ==========================================*/
 
 .contact
@@ -1142,7 +1195,7 @@ label.error
 
 
 /*=========================================
-	Contact Us
+    Contact Us
 ==========================================*/
 
 
