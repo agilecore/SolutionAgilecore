@@ -42,10 +42,14 @@
   <ItemGroup>
     <Compile Include="Models\Atuacao\Atuacao.cs" />
     <Compile Include="Models\Atuacao\AtuacaoSpecialized.cs" />
+    <Compile Include="Models\Cliente\Cliente.cs" />
+    <Compile Include="Models\Cliente\ClienteSpecialized.cs" />
     <Compile Include="Models\ContatoMensagem\ContatoMensagem.cs" />
     <Compile Include="Models\ContatoMensagem\ContatoMensagemSpecialized.cs" />
     <Compile Include="Models\Contato\Contato.cs" />
     <Compile Include="Models\Contato\ContatoSpecialized.cs" />
+    <Compile Include="Models\Delivery\Delivery.cs" />
+    <Compile Include="Models\Delivery\DeliverySpecialized.cs" />
     <Compile Include="Models\Institucional\Institucional.cs" />
     <Compile Include="Models\Institucional\InstitucionalSpecialized.cs" />
     <Compile Include="Models\LogAcesso\LogAcesso.cs" />
@@ -54,6 +58,10 @@
     <Compile Include="Models\PerfilUsuario\PerfilUsuarioSpecialized.cs" />
     <Compile Include="Models\Perfil\Perfil.cs" />
     <Compile Include="Models\Perfil\PerfilSpecialized.cs" />
+    <Compile Include="Models\Projeto\Projeto.cs" />
+    <Compile Include="Models\Projeto\ProjetoSpecialized.cs" />
+    <Compile Include="Models\Step\Step.cs" />
+    <Compile Include="Models\Step\StepSpecialized.cs" />
     <Compile Include="Models\Usuario\Usuario.cs" />
     <Compile Include="Models\Usuario\UsuarioSpecialized.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

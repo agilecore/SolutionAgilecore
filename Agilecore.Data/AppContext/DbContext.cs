@@ -13,6 +13,10 @@ namespace Agilecore.Data
              public DbSet<ContatoDto> Contato { get; set; }
              public DbSet<ContatoMensagemDto> ContatoMensagem { get; set; }
              public DbSet<InstitucionalDto> Institucional { get; set; }
+             public DbSet<ClienteDto> Cliente { get; set; }
+             public DbSet<ProjetoDto> Projeto { get; set; }
+             public DbSet<StepDto> Step { get; set; }
+             public DbSet<DeliveryDto> Delivery { get; set; }
                                                                                          
         static AgilecoreContext()                                      
         {                                                                                
@@ -38,6 +42,10 @@ namespace Agilecore.Data
              ModelBuilder.Configurations.Add(new ContatoMapper());   
              ModelBuilder.Configurations.Add(new ContatoMensagemMapper());   
              ModelBuilder.Configurations.Add(new InstitucionalMapper());   
+             ModelBuilder.Configurations.Add(new ClienteMapper());   
+             ModelBuilder.Configurations.Add(new ProjetoMapper());   
+             ModelBuilder.Configurations.Add(new StepMapper());   
+             ModelBuilder.Configurations.Add(new DeliveryMapper());   
         }                                                                                
     }                                                                                    
 }                                                                                        

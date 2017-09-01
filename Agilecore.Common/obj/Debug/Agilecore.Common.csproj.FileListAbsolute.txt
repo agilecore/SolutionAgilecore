@@ -1,5 +1,4 @@
 C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Common\bin\Debug\Agilecore.Common.dll
 C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Common\bin\Debug\Agilecore.Common.pdb
-C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Common\obj\Debug\Agilecore.Common.csprojResolveAssemblyReference.cache
 C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Common\obj\Debug\Agilecore.Common.dll
 C:\Users\rodrigo.fernandes\Documents\GitHub\SolutionAgilecore\Agilecore.Common\obj\Debug\Agilecore.Common.pdb

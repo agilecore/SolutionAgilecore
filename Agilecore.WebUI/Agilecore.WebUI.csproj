@@ -155,6 +155,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Area\AreaController.cs" />
+    <Compile Include="Controllers\Cliente\ClienteController.cs" />
+    <Compile Include="Controllers\Delivery\DeliveryController.cs" />
+    <Compile Include="Controllers\Projetos\ProjectosController.cs" />
+    <Compile Include="Controllers\Projeto\ProjetoController.cs" />
+    <Compile Include="Controllers\Step\StepController.cs" />
     <Compile Include="Controllers\Tecnologia\TecnologiaController.cs" />
     <Compile Include="Controllers\Clientes\ClientesController.cs" />
     <Compile Include="Controllers\Servicos\ServicosController.cs" />
@@ -260,6 +266,9 @@
     <Content Include="Views\Servicos\Index.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
     <Content Include="Views\Tecnologia\Index.cshtml" />
+    <Content Include="Views\Projetos\Index.cshtml" />
+    <Content Include="Views\Shared\_Institucional.cshtml" />
+    <Content Include="Views\Area\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -277,6 +286,7 @@
       <Name>Agilecore.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

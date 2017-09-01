@@ -17,7 +17,7 @@ namespace Agilecore.WebUI.Controllers
             _Institucional = new Institucional();                           
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int Id)
         {
             return View();
         }

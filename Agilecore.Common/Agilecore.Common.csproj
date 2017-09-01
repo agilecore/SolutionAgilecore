@@ -40,23 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Atuacao\AtuacaoDto.cs" />
-    <Compile Include="Models\Atuacao\AtuacaoDtoSpecialized.cs" />
+    <Compile Include="Models\AtuacaoDto.cs" />
     <Compile Include="Models\Base.cs" />
-    <Compile Include="Models\ContatoMensagem\ContatoMensagemDto.cs" />
-    <Compile Include="Models\ContatoMensagem\ContatoMensagemDtoSpecialized.cs" />
-    <Compile Include="Models\Contato\ContatoDto.cs" />
-    <Compile Include="Models\Contato\ContatoDtoSpecialized.cs" />
-    <Compile Include="Models\Institucional\InstitucionalDto.cs" />
-    <Compile Include="Models\Institucional\InstitucionalDtoSpecialized.cs" />
-    <Compile Include="Models\LogAcesso\LogAcessoDto.cs" />
-    <Compile Include="Models\LogAcesso\LogAcessoDtoSpecialized.cs" />
-    <Compile Include="Models\PerfilUsuario\PerfilUsuarioDto.cs" />
-    <Compile Include="Models\PerfilUsuario\PerfilUsuarioDtoSpecialized.cs" />
-    <Compile Include="Models\Perfil\PerfilDto.cs" />
-    <Compile Include="Models\Perfil\PerfilDtoSpecialized.cs" />
-    <Compile Include="Models\Usuario\UsuarioDto.cs" />
-    <Compile Include="Models\Usuario\UsuarioDtoSpecialized.cs" />
+    <Compile Include="Models\ClienteDto.cs" />
+    <Compile Include="Models\ContatoDto.cs" />
+    <Compile Include="Models\ContatoMensagemDto.cs" />
+    <Compile Include="Models\DeliveryDto.cs" />
+    <Compile Include="Models\InstitucionalDto.cs" />
+    <Compile Include="Models\LogAcessoDto.cs" />
+    <Compile Include="Models\PerfilDto.cs" />
+    <Compile Include="Models\PerfilUsuarioDto.cs" />
+    <Compile Include="Models\ProjetoDto.cs" />
+    <Compile Include="Models\StepDto.cs" />
+    <Compile Include="Models\UsuarioDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

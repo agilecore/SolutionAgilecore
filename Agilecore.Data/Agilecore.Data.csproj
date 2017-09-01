@@ -52,12 +52,16 @@
     <Compile Include="AppContext\DbContext.cs" />
     <Compile Include="Interface\IRepository.cs" />
     <Compile Include="Mapper\Atuacao\AtuacaoMapper.cs" />
+    <Compile Include="Mapper\Cliente\ClienteMapper.cs" />
     <Compile Include="Mapper\ContatoMensagem\ContatoMensagemMapper.cs" />
     <Compile Include="Mapper\Contato\ContatoMapper.cs" />
+    <Compile Include="Mapper\Delivery\DeliveryMapper.cs" />
     <Compile Include="Mapper\Institucional\InstitucionalMapper.cs" />
     <Compile Include="Mapper\LogAcesso\LogAcessoMapper.cs" />
     <Compile Include="Mapper\PerfilUsuario\PerfilUsuarioMapper.cs" />
     <Compile Include="Mapper\Perfil\PerfilMapper.cs" />
+    <Compile Include="Mapper\Projeto\ProjetoMapper.cs" />
+    <Compile Include="Mapper\Step\StepMapper.cs" />
     <Compile Include="Mapper\Usuario\UsuarioMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Repository.cs" />
@@ -73,6 +77,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -84,6 +84,47 @@ create table st_contato_mensagem
 	foreign key (id_contato)    references st_contato(id_contato),
 ); 
 
+create table st_cliente                                             
+(                                                                
+    id_cliente                  int identity(1,1) primary key    ,	
+	nome                        varchar(100) not null	         ,
+	email                       varchar(100) not null	         ,
+	senha   					varchar(50)  not null            ,
+	dt_cadastro     		    date not null     	             ,	
+); 
+
+create table st_projeto                                             
+(                                                                
+    id_projeto                  int identity(1,1) primary key    ,	
+	id_cliente          		int not null				     ,
+	nome                        varchar(100) not null	         ,
+	descricao                   text not null	                 ,
+	dt_cadastro     		    date not null     	             ,
+    foreign key (id_cliente)    references st_cliente(id_cliente)	
+); 
+
+create table st_step                                             
+(                                                                
+    id_step                     int identity(1,1) primary key    ,	
+	nome                        varchar(100) not null	         ,
+	descricao                   text not null	                 ,	
+); 
+
+create table st_delivery                                             
+(                                                                
+    id_delivery                 int identity(1,1) primary key    ,	
+	id_projeto          		int not null				     ,
+    id_step              		int not null				     ,
+	nome                        varchar(100) not null	         ,
+	descricao                   text not null	                 ,
+	dt_cadastro     		    date not null     	             ,
+	dt_entrega        		    date not null     	             ,
+	status   			        char(1)	not null                 ,       	         
+    foreign key (id_projeto)    references st_projeto(id_projeto),
+	foreign key (id_step)       references st_step(id_step)	
+); 
+
+
 
 
 
